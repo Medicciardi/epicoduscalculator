@@ -18,6 +18,12 @@ var multiply = function (number1, number2){
 
 //Front-end logic
 $(document).ready(function() {
+
+	$("#calculate").mouseout(function(){
+		var calculate = $("#calculate").val();
+		$(calculate).show();
+	});
+
 	$("form#add").submit(function(event){
 		event.preventDefault();
 		var number1 = parseInt($("#add1").val());
