@@ -19,7 +19,7 @@ var multiply = function (number1, number2){
 //Front-end logic
 $(document).ready(function() {
 
-	$("#calculate").mouseout(function(){
+	$("#calculate").change(function(){
 		var calculate = $("#calculate").val();
 		$(calculate).show();
 	});
